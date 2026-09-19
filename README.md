@@ -1,7 +1,9 @@
 # LUXE — cliffside retreat (concept website)
 
-> **A self-initiated concept by [Shobal Sabu](https://github.com/shobalsabu668-tech).**
+> **A self-initiated concept by [Shobal Sabu](https://shobal-sabu-portfolio.vercel.app).**
 > LUXE is a fictional resort. It isn't a real business or client work, and nothing on the site can be booked.
+
+**Live site:** https://luxe-resort-concept.vercel.app · **Case study:** https://shobal-sabu-portfolio.vercel.app/work/luxe
 
 LUXE is a complete, working website for an imaginary luxury resort on India's Konkan coast. It shows how a hospitality
 brand can lead with atmosphere and still get a guest from first impression to a priced stay in a few seconds.
