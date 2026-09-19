@@ -109,6 +109,10 @@
     background: var(--color-salt);
     color: var(--color-ink);
     color-scheme: light;
+    /* At fractional scaling (e.g. Windows 150%) two light sections can meet
+       mid-pixel and the dark body shows through as a hairline. The next
+       section paints over this, so it only fills that seam. */
+    box-shadow: 0 1px 0 var(--color-salt);
   }
 
   .wordmark {

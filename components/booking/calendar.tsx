@@ -153,7 +153,7 @@ export function Calendar({ today, value, onChange, months = 2, horizon = 18, cla
         </button>
         <p className="t-label" aria-live="polite">
           {formatMonth(view)}
-          {months === 2 ? <span className="hidden md:inline"> â€” {formatMonth(addMonths(view, 1))}</span> : null}
+          {months === 2 ? <span className="hidden md:inline"> — {formatMonth(addMonths(view, 1))}</span> : null}
         </p>
         <button
           type="button"
@@ -172,8 +172,8 @@ export function Calendar({ today, value, onChange, months = 2, horizon = 18, cla
           const lead = (dayOfWeek(start) + 6) % 7;
           const count = daysInMonth(start);
           return (
-            <div key={start} className={cn(m === 1 && "hidden md:block")}>
-              <p className="t-label mb-3 opacity-80 md:block" id={`cal-${start}`}>
+            <div key={start} className={cn("relative", m === 1 && "hidden md:block")}>
+              <p className="t-label sr-only opacity-80 md:not-sr-only md:mb-3 md:block" id={`cal-${start}`}>
                 {formatMonth(start)}
               </p>
               <div role="grid" aria-labelledby={`cal-${start}`} className="grid grid-cols-7 gap-y-1">
