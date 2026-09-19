@@ -15,7 +15,7 @@ export function StepsNav({ step, furthest, onGo }: { step: Step; furthest: numbe
   const current = step === "done" ? STEPS.length : STEPS.indexOf(step);
   return (
     <nav aria-label="Booking steps">
-      <ol className="flex gap-2 overflow-x-auto no-scrollbar md:gap-8">
+      <ol className="relative flex gap-2 overflow-x-auto no-scrollbar md:gap-8">
         {STEPS.map((s, i) => {
           const done = i < current;
           const here = i === current;

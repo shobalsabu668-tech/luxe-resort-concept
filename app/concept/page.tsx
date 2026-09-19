@@ -100,9 +100,9 @@ export default function ConceptPage() {
           <p className="muted mt-6 max-w-2xl">
             All photographs are from Unsplash, used under the Unsplash License. Thank you to every photographer below.
           </p>
-          <ul className="mt-12 grid gap-x-8 gap-y-3 text-[0.92rem] sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="mt-12 grid grid-cols-1 gap-x-8 gap-y-3 text-[0.92rem] sm:grid-cols-2 lg:grid-cols-3">
             {credits.map((p) => (
-              <li key={p.src} className="flex justify-between gap-4 border-b border-salt/10 py-2">
+              <li key={p.src} className="relative flex min-w-0 justify-between gap-4 border-b border-salt/10 py-2">
                 <span className="min-w-0 truncate text-mist">{p.alt}</span>
                 <a href={p.credit.url} target="_blank" rel="noreferrer" className="link-u shrink-0">
                   {p.credit.name}

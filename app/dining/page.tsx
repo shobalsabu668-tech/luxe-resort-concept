@@ -22,7 +22,7 @@ export default function DiningPage() {
       />
 
       <nav aria-label="Restaurants" className="theme-dark border-b border-salt/10">
-        <ul className="shell flex gap-8 overflow-x-auto py-5 no-scrollbar">
+        <ul className="shell relative flex gap-8 overflow-x-auto py-5 no-scrollbar">
           {venues.map((v) => (
             <li key={v.slug} className="shrink-0">
               <a href={`#${v.slug}`} className="t-label link-grow">

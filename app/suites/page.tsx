@@ -78,7 +78,7 @@ export default function SuitesPage() {
           <h2 id="compare-title" className="t-h2 mt-5">
             Compare the suites.
           </h2>
-          <div className="mt-12 overflow-x-auto" tabIndex={0} role="region" aria-labelledby="compare-title">
+          <div className="relative mt-12 overflow-x-auto" tabIndex={0} role="region" aria-labelledby="compare-title">
             <table className="w-full min-w-[46rem] border-collapse text-left text-[0.95rem]">
               <caption className="sr-only">Suite comparison: size, guests, view, private pool and starting rate</caption>
               <thead>
